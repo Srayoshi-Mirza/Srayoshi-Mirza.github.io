@@ -21,6 +21,13 @@ body {
     margin: 20px;
     cursor: pointer;
 }
+/* Logo Tools Section */
+.logo-tool {
+    width: 100px; /* Set all logos to the same width */
+    height: 100px; /* Set all logos to the same height */
+    object-fit: contain; /* Maintain aspect ratio while ensuring it fits inside */
+    margin: 10px 0; /* Space between logos */
+}
 
 /* Navigation Bar */
 nav {
