@@ -21,13 +21,27 @@ body {
     margin: 20px;
     cursor: pointer;
 }
-/* Logo Tools Section */
-.logo-tool {
-    width: 100px; /* Set all logos to the same width */
-    height: 100px; /* Set all logos to the same height */
-    object-fit: contain; /* Maintain aspect ratio while ensuring it fits inside */
-    margin: 10px 0; /* Space between logos */
+/* Tools Section */
+.logo-row {
+    display: flex; /* Align logos in a row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between logos */
+    padding: 20px 0;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    white-space: nowrap; /* Prevent line breaks */
+    justify-content: center;
 }
+
+.logo-item {
+    flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+.logo-tool {
+    width: 100px; /* Fixed width for each logo */
+    height: 100px; /* Fixed height for each logo */
+    object-fit: contain; /* Ensure logo maintains aspect ratio */
+}
+
 
 /* Navigation Bar */
 nav {
