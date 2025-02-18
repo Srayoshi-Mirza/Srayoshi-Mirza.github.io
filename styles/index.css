@@ -1,0 +1,273 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light Gray Background */
+    color: #333; /* Black Text */
+    line-height: 1.6;
+    padding-top: 60px; /* To account for the fixed navigation bar */
+}
+
+/* Logo Styling */
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff; /* White Background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    color: #333; /* Black Text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #007bff; /* Blue Highlight on Hover */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+/* Main Section Styling */
+header {
+    text-align: center;
+    margin: 80px 0 50px 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2b1d4e; /* Dark Purple for Heading */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555; /* Dark Gray Text for Readability */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+}
+
+
+/* Project, Certification, and Blog Item Styling */
+.project-list, .certification-list, .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.project-item, .certification-item, .blog-item {
+    width: 22%; /* Adjusted to make them larger and readable */
+    min-width: 280px; /* Ensure minimum size */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff; /* White background for items */
+    border: 1px solid #ddd; /* Light Border */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333; /* Black text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px; /* Fixed height for consistency */
+    overflow: hidden; /* Hide content that overflows */
+}
+
+
+.project-item:hover, .certification-item:hover, .blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img, .certification-item img, .blog-item img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-item h3, .certification-item h3, .blog-item h3 {
+    font-size: 1.25rem;
+    color: #2b1d4e; /* Dark Purple for Heading */
+    margin: 10px 0;
+}
+
+
+/* Description - Truncated with Ellipsis */
+.project-item p, .certification-item p, .blog-item p {
+    font-size: 1rem;
+    color: #555; /* Dark Gray Text for Readability */
+    margin-bottom: 15px;
+    flex-grow: 1; /* Allow description text to grow */
+    overflow: hidden; /* Hide the overflowing text */
+    white-space: nowrap; /* Prevent wrapping of text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    height: 60px; /* Ensure description height */
+}
+/* Button Styling */
+.project-item a, .certification-item a, .blog-item a {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff; /* Blue */
+    padding: 12px 25px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-item a:hover, .certification-item a:hover, .blog-item a:hover {
+    background-color: #0056b3; /* Darker Blue */
+    transform: scale(1.1);
+}
+
+/* Data Visualization Section */
+#data-visualization-projects {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b1d4e; /* Dark Purple Background */
+    color: white;
+    padding: 20px;
+}
+
+footer .social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icon:hover {
+    color: #007bff; /* Blue Hover for Icons */
+}
+
+/* Social Media Icons (FontAwesome) */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+ .row {
+        flex-direction: column-reverse; /* Stack image below text */
+        text-align: center;
+    }
+
+    .col-md-6 {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .col-md-6 img {
+        max-width: 80%; /* Reduce image size for mobile */
+        height: auto;
+        margin-top: 20px;
+    }
+
+    header .text-justify {
+        height: auto; /* Allow flexible height */
+        display: block;
+    }
+    .project-item, .certification-item, .blog-item {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item, .certification-item, .blog-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

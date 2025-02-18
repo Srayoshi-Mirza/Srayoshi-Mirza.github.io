@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light Gray Background */
+}
+
+/* Navigation Bar Styling */
+nav {
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #0a2b3c; /* Darker Blue Background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #007bff; /* Blue Highlight on Hover */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+/* About Me Section Styling */
+.about-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Ensures full-width text under the image */
+.mt-4 .col-12 {
+    text-align: justify;
+    padding-top: 20px;
+}
+
+
+
+.about-description a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-description a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b1d4e; /* Dark Purple Background */
+    color: white;
+    padding: 20px;
+}
+
+footer .social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icon:hover {
+    color: #007bff; /* Blue Hover for Icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-img {
+        width: 200px;
+        height: 300px; /* Smaller size on medium screens */
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .about-img {
+        width: 180px;
+        height: 270px;
+    }
+
+    .about-heading {
+        font-size: 1.8rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}
