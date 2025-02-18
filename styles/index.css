@@ -42,6 +42,19 @@ body {
     object-fit: contain; /* Ensure logo maintains aspect ratio */
 }
 
+/* Styling for the horizontal scrollbar */
+.logo-row::-webkit-scrollbar {
+    height: 8px; /* Thin scrollbar */
+}
+
+.logo-row::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Blue color for the scrollbar */
+    border-radius: 10px;
+}
+
+.logo-row::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* Light background for the track */
+}
 
 /* Navigation Bar */
 nav {
