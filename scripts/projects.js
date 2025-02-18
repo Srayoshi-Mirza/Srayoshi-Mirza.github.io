@@ -16,12 +16,12 @@ const projects = [
     },
     {
         title: "Customer Segmentation Analysis Using Unsupervised Learning",
-        githubLink: "https://github.com/Srayoshi-Mirza/Stress_Detection_Analysis",
+        githubLink: "https://github.com/Srayoshi-Mirza/Customer-Segmentation-Unsupervised-Learning-",
         image: "assets/images/stress_detection.png"
     },
     {
         title: "Stress Detection Analysis",
-        githubLink: "https://github.com/Srayoshi-Mirza/Customer-Segmentation-Unsupervised-Learning-",
+        githubLink: "https://github.com/Srayoshi-Mirza/Stress_Detection_Analysis",
         image: "assets/images/All clusters.png"
     },
     {
